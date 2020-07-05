@@ -1,0 +1,20 @@
+/*HTML*/
+ <label for="mobile"><b>Phone-no:</b></label>
+ <input type="text" name="mobile" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" 
+ maxlength="10" placeholder="enter your number...." id="mobile"/>
+  </div><br><br>
+
+/*javascript*/
+
+    <script type="text/javascript">
+    function validate() {
+   var mobile = document.getElementById("mobile").value;
+    var pattern = /^[6-9]{1}[0-9]{9}$/;
+    if (pattern.test(mobile)) {
+   alert("Your number verified: "+mobile); 
+   return true;
+   } 
+  alert("Not a valid mobile number(Input 10 digits  number!!!...)");
+   return false;
+      }
+  </script>
